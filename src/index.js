@@ -3,7 +3,7 @@ export const SUCCESS = '@@redux-clipboard/SUCCESS';
 export const FAILED = '@@redux-clipboard/FAILED';
 
 function createAction(type) {
-  return (payload = {}, meta = {}) => ({
+  return ({ payload = {}, meta = {} }) => ({
     type,
     payload,
     meta
