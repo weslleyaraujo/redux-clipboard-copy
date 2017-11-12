@@ -1,0 +1,11 @@
+{
+  "name": "redux-clipboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "Weslley Araujo <weslleyaraujo20@gmail.com>",
+  "license": "MIT"
+}
