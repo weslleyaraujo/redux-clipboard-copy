@@ -28,6 +28,7 @@
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "cross-env": "^5.1.1",
     "rollup": "^0.51.5",
     "rollup-plugin-babel": "^3.0.2",
