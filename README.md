@@ -5,14 +5,14 @@ Clipboard copy [middleware](http://redux.js.org/docs/advanced/Middleware.html) f
 
 `document.execCommand` is [not yet supported in all browsers](https://caniuse.com/#feat=document-execcommand), you may need some sort of polifyll or a different lib may work for you.
 
-```js
+```
 npm install redux-clipboard-copy --save 
 yarn add redux-clipboard-copy --save
 ```
 
 ## Note
 
-**If you use Redux Clipboard copy in CommonJS environment, don’t forget to add `.default` to your import**
+**If you use it in CommonJS environment, don’t forget to add `.default` to your import**
 
 ```js
 var reduxClipboardCopy = require('redux-clipboard-copy').default
