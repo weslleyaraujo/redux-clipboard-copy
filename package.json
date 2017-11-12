@@ -1,6 +1,6 @@
 {
   "name": "redux-clipboard-copy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Copy to clipboard using execCommand",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -12,6 +12,8 @@
     "src"
   ],
   "scripts": {
+    "clean": "rimraf lib dist es coverage",
+    "prepare": "npm run clean && npm run build",
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src/index.js --out-dir lib",
     "build:es": "cross-env BABEL_ENV=es babel src/index.js --out-dir es",
     "build:umd": "cross-env BABEL_ENV=es NODE_ENV=development rollup -c -i src/index.js -o dist/redux-clipboard-copy.js",
@@ -34,5 +36,8 @@
     "rollup-plugin-replace": "^2.0.0",
     "rollup-plugin-uglify": "^2.0.1",
     "uglify-es": "^3.1.9"
+  },
+  "dependencies": {
+    "rimraf": "^2.6.2"
   }
 }
