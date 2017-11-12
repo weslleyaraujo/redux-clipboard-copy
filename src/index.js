@@ -2,11 +2,13 @@ export const COPY = '@@redux-clipboard/COPY';
 export const SUCCESS = '@@redux-clipboard/SUCCESS';
 export const FAILED = '@@redux-clipboard/FAILED';
 
-const createAction = type => (payload = {}, meta = {}) => ({
-  type,
-  payload,
-  meta
-});
+function createAction(type) {
+  return (payload = {}, meta = {}) => ({
+    type,
+    payload,
+    meta
+  });
+}
 
 export const copy = createAction(COPY);
 export const success = createAction(SUCCESS);
@@ -18,7 +20,7 @@ const styles = `
   top: -999px;
 `;
 
-const reduxClipboard = ({ dispatch }) => {
+const reduxClipboardCopy = ({ dispatch }) => {
   const input = global.document.createElement('input');
   input.type = 'text';
   input.setAttribute('styles', styles);
@@ -42,4 +44,4 @@ const reduxClipboard = ({ dispatch }) => {
   };
 };
 
-export default reduxClipboard;
+export default reduxClipboardCopy;
