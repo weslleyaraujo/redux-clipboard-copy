@@ -1,7 +1,7 @@
 Redux Clipboard Copy
 =============
 
-Clippboard copy [middleware](http://redux.js.org/docs/advanced/Middleware.html) for Redux using [`document.execCommand`](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand).
+Clipboard copy [middleware](http://redux.js.org/docs/advanced/Middleware.html) for Redux using [`document.execCommand`](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand).
 
 `document.execCommand` is [not yet supported in all browsers](https://caniuse.com/#feat=document-execcommand), you may need some sort of polifyll or a different lib may work for you.
 
