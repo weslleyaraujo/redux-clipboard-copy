@@ -1,6 +1,6 @@
 {
   "name": "redux-clipboard-copy",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Copy to clipboard using execCommand",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -14,8 +14,8 @@
   "scripts": {
     "clean": "rimraf lib dist es coverage",
     "prepare": "npm run clean && npm run build",
-    "build:commonjs": "cross-env BABEL_ENV=commonjs babel src/index.js --out-dir lib",
-    "build:es": "cross-env BABEL_ENV=es babel src/index.js --out-dir es",
+    "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
+    "build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
     "build:umd": "cross-env BABEL_ENV=es NODE_ENV=development rollup -c -i src/index.js -o dist/redux-clipboard-copy.js",
     "build:umd:min": "cross-env BABEL_ENV=es NODE_ENV=production rollup -c -i src/index.js -o dist/redux-clipboard-copy.min.js",
     "build": "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min"
