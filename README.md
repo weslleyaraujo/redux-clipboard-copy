@@ -150,7 +150,7 @@ function reducer(state = {}, action) {
 Action type to handle copy failure into reducers
 
 ```js
-import { failure } from 'redux-clipboard-copy';
+import { FAILED } from 'redux-clipboard-copy';
 
 // ...
 
