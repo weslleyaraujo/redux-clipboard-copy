@@ -1,15 +1,14 @@
 {
   "name": "redux-clipboard-copy",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Copy to clipboard using execCommand",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
   "files": [
     "dist",
     "lib",
     "es",
-    "src"
   ],
   "scripts": {
     "build": "microbundle",
