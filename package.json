@@ -1,20 +1,28 @@
 {
   "name": "redux-clipboard-copy",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Copy to clipboard using execCommand",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
-  "files": ["dist", "lib", "es", "src"],
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "src"
+  ],
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch"
   },
-  "keywords": ["redux", "clipboard"],
+  "keywords": [
+    "redux",
+    "clipboard"
+  ],
   "author": "Weslley Araujo <weslleyaraujo20@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "microbundle": "^0.3.1"
+    "microbundle": "^0.4.4"
   },
   "dependencies": {}
 }
